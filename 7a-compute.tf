@@ -19,7 +19,7 @@ resource "google_compute_instance" "iowahq-vm" {
 
   metadata_startup_script = file("./startup.sh")
 
-  }
+}
 
 ########################################################################
 resource "google_compute_instance" "tokyo1-vm" {
@@ -40,6 +40,6 @@ resource "google_compute_instance" "tokyo1-vm" {
       // Ephemeral public IP
     }
   }
-metadata_startup_script = file("./startup.sh")
+  metadata_startup_script = file("./startup.sh")
 
 }

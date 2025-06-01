@@ -22,7 +22,7 @@ resource "google_compute_region_backend_service" "lb" {
   health_checks         = [google_compute_region_health_check.lb.self_link]
   port_name             = "webserver"
   backend {
-# Backend refers to TF 10
+    # Backend refers to TF 10
     group           = google_compute_region_instance_group_manager.app.instance_group
     capacity_scaler = 1.0
     balancing_mode  = "UTILIZATION"

@@ -9,7 +9,7 @@ output "lb_static_ip_address" {
 output "compute_zones" {
   description = "Comma-separated compute zones"
   # convert set into string delimited by commas (CSV) before output
-  value       = join(", ", data.google_compute_zones.available.names)
+  value = join(", ", data.google_compute_zones.available.names)
 }
 
 

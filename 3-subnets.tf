@@ -14,9 +14,9 @@ resource "google_compute_subnetwork" "regional_proxy_subnet" {
   region        = "us-central1"
   ip_cidr_range = "192.168.255.0/24"
   # This purpose reserves this subnet for regional Envoy-based load balancers
-  purpose       = "REGIONAL_MANAGED_PROXY"
-  network       = google_compute_network.main.id
-  role          = "ACTIVE"
+  purpose = "REGIONAL_MANAGED_PROXY"
+  network = google_compute_network.main.id
+  role    = "ACTIVE"
 }
 
 

@@ -3,7 +3,7 @@
 resource "google_compute_address" "lb" {
   name   = "lb-static-ip"
   region = "us-central1"
-  
+
 }
 
 # https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_forwarding_rule
